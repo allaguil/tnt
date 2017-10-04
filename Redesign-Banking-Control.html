@@ -1,0 +1,38 @@
+<div id="mboxClickTrack-div"></div>
+<script type="text/javascript">
+        
+       $( document ).ready(function() {
+
+var CitiTnT_Redesign_Banking_Overview_test= ((window.location.href.toString().indexOf('www.citi.com') > -1) || (window.location.href.toString().indexOf('//citi.com') > -1)) ? 0 : 1;
+        mboxDefine("mboxClickTrack-div", "mboxClickTrack");
+
+        (CitiTnT_Redesign_Banking_Overview_test) ? console.log("swaping content "): null;  
+
+            if (jQuery("button.btn-invert").length>0) {
+
+            // Lines of jQuery code go here
+
+            } else {
+                tryAgain_Redesign_Banking_Overview_test(arguments);
+            }
+        });
+
+    function tryAgain_Redesign_Banking_Overview_test(args, _this) {
+        var self = arguments.callee;
+        var func = args.callee;
+        func.current = (func.current || 0) + self.interval;
+
+        if (func.current <= self.max) {
+            setTimeout(function() {
+                func.apply((_this || {}), Array.prototype.slice.call(args));
+            }, self.interval);
+            return true;
+        } else {
+           mboxUpdate('mboxClickTrack', 'status=errorlog_Redesign_Banking_Overview_test');
+            return false;
+        }
+
+    };
+    tryAgain_Redesign_Banking_Overview_test.max = 3500;
+    tryAgain_Redesign_Banking_Overview_test.interval = 500;
+</script>
